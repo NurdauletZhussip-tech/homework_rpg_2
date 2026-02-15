@@ -81,7 +81,21 @@ public class Goblin implements Enemy {
          }
          return copy;
      }
-
+    public void multiplyStats(double multiplier) {
+        this.health = (int) (this.health * multiplier);
+        this.damage = (int) (this.damage * multiplier);
+        this.defense = (int) (this.defense * multiplier);
+        this.speed = (int) (this.speed * (1 + (multiplier - 1) * 0.5));
+        this.name = "Elite " + this.name;
+    }
+    public void addAbility(Ability ability) {
+        if (ability != null) {
+            this.abilities.add(ability);
+        }
+    }
+    public void setLootTable(LootTable lootTable) {
+        this.lootTable = lootTable;
+    }
 
 
 }
