@@ -1,12 +1,12 @@
-package com.narxoz.rpg.enemy;
-
+/*package com.narxoz.rpg.enemy;
+import com.narxoz.rpg.enemy.Enemy;
 import com.narxoz.rpg.combat.Ability;
 import com.narxoz.rpg.loot.LootTable;
 
 import java.util.List;
 import java.util.ArrayList;
 
-public class Goblin implements Enemy {
+public class Goblin extends Enemy {
 
     private String name;
     private int health;
@@ -98,4 +98,4 @@ public class Goblin implements Enemy {
     }
 
 
-}
+}*/
